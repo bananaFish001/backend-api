@@ -1,0 +1,6 @@
+const fs = require('fs');
+fs.readFile('geeks.txt', 'utf-8', function (err, data) {
+    console.log(data)
+});
+
+console.log('We are getting the file data, please wait...\n');
