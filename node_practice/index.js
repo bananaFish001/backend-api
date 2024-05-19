@@ -7,3 +7,6 @@ const sum2 = addfn(10, 11);
 
 console.log(sum1)
 console.log(sum2)
+
+require('./batman.js');
+require('./superman.js')
