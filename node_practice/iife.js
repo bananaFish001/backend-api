@@ -1,11 +1,11 @@
 // Immediately Invocable Function Expression
 
-(function () {
+(function (message) {
     const character = 'Makima';
-    console.log(character)
-}) ();
+    console.log(message, character)
+}) ("Miss");
 
-(function () {
+(function (message) {
     const character = 'Asa Mitaka';
-    console.log(character)
-}) ();
+    console.log(message, character)
+}) ("Cute");
