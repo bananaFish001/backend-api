@@ -3,7 +3,11 @@ const app = express();
 
 // Routes
 app.get('/', (req, res) => {
-    
+    res.send('Hello Node API')
+});
+
+app.get('/blog', (req, res) => {
+    res.send('Saying hello in the blog.')
 })
 
 app.listen(3000, () => {
