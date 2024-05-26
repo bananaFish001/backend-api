@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+app.use(express.json())
 
 
 // Routes
@@ -12,6 +13,10 @@ app.get('/blog', (req, res) => {
     res.send('Saying hello in the blog with a big smile')
 })
 
+app.post('/product', (req, res) => {
+    console.log(req.body);
+    res.send(req.body)
+})
 
 
 mongoose.connect('mongodb+srv://raj123rs308:g7pBsFmAdqRo5bXB@bananaapi.zvpq8yr.mongodb.net/?retryWrites=true&w=majority&appName=bananaAPI').then(() => {
